@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Runtime data and logs
+data/
+logs/
+log/
+*.log
+*.out
+*.pid
+*.part
+*.ok
+
+# Generated datasets
+*.dbn
+*.dbn.zst
+*.parquet
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store

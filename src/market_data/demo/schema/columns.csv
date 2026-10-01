@@ -1,0 +1,275 @@
+column_name,dtype,source,load_by_default,description
+ts_recv_ns,datetime_ns,fut_mbp,true,Receive timestamp
+ts_event_ns,datetime_ns,fut_mbp,true,Event timestamp
+sequence,int64,fut_mbp,true,Sequence for deterministic ordering
+record_id,utf8,fut_mbp,true,Stable row identifier
+symbol,utf8,fut_mbp,true,Futures symbol
+contract_key,utf8,fut_mbp,true,Futures contract key
+bid_px_00,float64,fut_mbp,true,Best bid price level 0
+ask_px_00,float64,fut_mbp,true,Best ask price level 0
+bid_sz_00,float64,fut_mbp,true,Best bid size level 0
+ask_sz_00,float64,fut_mbp,true,Best ask size level 0
+bid_ct_00,int64,fut_mbp,true,Best bid order count level 0
+ask_ct_00,int64,fut_mbp,true,Best ask order count level 0
+bid_px_01,float64,fut_mbp,true,Bid price level 1
+ask_px_01,float64,fut_mbp,true,Ask price level 1
+bid_sz_01,float64,fut_mbp,true,Bid size level 1
+ask_sz_01,float64,fut_mbp,true,Ask size level 1
+bid_ct_01,int64,fut_mbp,true,Bid order count level 1
+ask_ct_01,int64,fut_mbp,true,Ask order count level 1
+bid_px_02,float64,fut_mbp,true,Bid price level 2
+ask_px_02,float64,fut_mbp,true,Ask price level 2
+bid_sz_02,float64,fut_mbp,true,Bid size level 2
+ask_sz_02,float64,fut_mbp,true,Ask size level 2
+bid_ct_02,int64,fut_mbp,true,Bid order count level 2
+ask_ct_02,int64,fut_mbp,true,Ask order count level 2
+bid_px_03,float64,fut_mbp,true,Bid price level 3
+ask_px_03,float64,fut_mbp,true,Ask price level 3
+bid_sz_03,float64,fut_mbp,true,Bid size level 3
+ask_sz_03,float64,fut_mbp,true,Ask size level 3
+bid_ct_03,int64,fut_mbp,true,Bid order count level 3
+ask_ct_03,int64,fut_mbp,true,Ask order count level 3
+bid_px_04,float64,fut_mbp,true,Bid price level 4
+ask_px_04,float64,fut_mbp,true,Ask price level 4
+bid_sz_04,float64,fut_mbp,true,Bid size level 4
+ask_sz_04,float64,fut_mbp,true,Ask size level 4
+bid_ct_04,int64,fut_mbp,true,Bid order count level 4
+ask_ct_04,int64,fut_mbp,true,Ask order count level 4
+bid_px_05,float64,fut_mbp,true,Bid price level 5
+ask_px_05,float64,fut_mbp,true,Ask price level 5
+bid_sz_05,float64,fut_mbp,true,Bid size level 5
+ask_sz_05,float64,fut_mbp,true,Ask size level 5
+bid_ct_05,int64,fut_mbp,true,Bid order count level 5
+ask_ct_05,int64,fut_mbp,true,Ask order count level 5
+bid_px_06,float64,fut_mbp,true,Bid price level 6
+ask_px_06,float64,fut_mbp,true,Ask price level 6
+bid_sz_06,float64,fut_mbp,true,Bid size level 6
+ask_sz_06,float64,fut_mbp,true,Ask size level 6
+bid_ct_06,int64,fut_mbp,true,Bid order count level 6
+ask_ct_06,int64,fut_mbp,true,Ask order count level 6
+bid_px_07,float64,fut_mbp,true,Bid price level 7
+ask_px_07,float64,fut_mbp,true,Ask price level 7
+bid_sz_07,float64,fut_mbp,true,Bid size level 7
+ask_sz_07,float64,fut_mbp,true,Ask size level 7
+bid_ct_07,int64,fut_mbp,true,Bid order count level 7
+ask_ct_07,int64,fut_mbp,true,Ask order count level 7
+bid_px_08,float64,fut_mbp,true,Bid price level 8
+ask_px_08,float64,fut_mbp,true,Ask price level 8
+bid_sz_08,float64,fut_mbp,true,Bid size level 8
+ask_sz_08,float64,fut_mbp,true,Ask size level 8
+bid_ct_08,int64,fut_mbp,true,Bid order count level 8
+ask_ct_08,int64,fut_mbp,true,Ask order count level 8
+bid_px_09,float64,fut_mbp,true,Bid price level 9
+ask_px_09,float64,fut_mbp,true,Ask price level 9
+bid_sz_09,float64,fut_mbp,true,Bid size level 9
+ask_sz_09,float64,fut_mbp,true,Ask size level 9
+bid_ct_09,int64,fut_mbp,true,Bid order count level 9
+ask_ct_09,int64,fut_mbp,true,Ask order count level 9
+best_bid_px,float64,fut_mbp,true,Best bid price
+best_ask_px,float64,fut_mbp,true,Best ask price
+best_bid_sz,float64,fut_mbp,true,Best bid size
+best_ask_sz,float64,fut_mbp,true,Best ask size
+spread,float64,fut_mbp,true,Top-of-book spread
+mid_px,float64,fut_mbp,true,Top-of-book midpoint
+book_quality_bucket,utf8,fut_mbp,true,Book quality label
+rtype,int64,fut_mbp,false,Raw message type
+publisher_id,int64,fut_mbp,false,Publisher id
+instrument_id,int64,fut_mbp,false,Instrument id
+action,utf8,fut_mbp,false,Raw action
+side,utf8,fut_mbp,false,Raw side
+depth,int64,fut_mbp,false,Raw depth
+flags,int64,fut_mbp,false,Raw flags
+ts_in_delta,int64,fut_mbp,false,Feed delta timestamp
+source_file,utf8,fut_mbp,false,Origin DBN file
+stage_version,utf8,fut_mbp,false,Upstream stage version
+underlying_symbol,utf8,fut_mbp,false,Underlying symbol
+product_root,utf8,fut_mbp,false,Product root
+is_rth,bool,fut_mbp,false,Regular trading hours flag
+session_name,utf8,fut_mbp,false,Session name
+calendar_trade_date,date,fut_mbp,false,Calendar trade date
+session_open_utc,datetime_ms,fut_mbp,false,Session open time
+session_close_utc,datetime_ms,fut_mbp,false,Session close time
+calendar_name,utf8,fut_mbp,false,Trading calendar name
+recv_event_latency_ns,int64,fut_mbp,false,Receive-event latency
+is_crossed_book,bool,fut_mbp,false,Crossed book flag
+is_empty_book,bool,fut_mbp,false,Empty book flag
+is_non_monotonic,bool,fut_mbp,false,Monotonicity flag
+is_sparse_book,bool,fut_mbp,false,Sparse book flag
+is_wide_book,bool,fut_mbp,false,Wide book flag
+is_snapshot,bool,fut_mbp,false,Snapshot flag
+ts_recv_ns,datetime_ns,opt_mbp,true,Receive timestamp
+ts_event_ns,datetime_ns,opt_mbp,true,Event timestamp
+sequence,int64,opt_mbp,true,Sequence for deterministic ordering
+record_id,utf8,opt_mbp,true,Stable row identifier
+symbol,utf8,opt_mbp,true,Option symbol
+contract_key,utf8,opt_mbp,true,Option contract key
+bid_px_00,float64,opt_mbp,true,Best bid price level 0
+ask_px_00,float64,opt_mbp,true,Best ask price level 0
+bid_sz_00,float64,opt_mbp,true,Best bid size level 0
+ask_sz_00,float64,opt_mbp,true,Best ask size level 0
+bid_ct_00,int64,opt_mbp,true,Best bid order count level 0
+ask_ct_00,int64,opt_mbp,true,Best ask order count level 0
+bid_px_01,float64,opt_mbp,true,Bid price level 1
+ask_px_01,float64,opt_mbp,true,Ask price level 1
+bid_sz_01,float64,opt_mbp,true,Bid size level 1
+ask_sz_01,float64,opt_mbp,true,Ask size level 1
+bid_ct_01,int64,opt_mbp,true,Bid order count level 1
+ask_ct_01,int64,opt_mbp,true,Ask order count level 1
+bid_px_02,float64,opt_mbp,true,Bid price level 2
+ask_px_02,float64,opt_mbp,true,Ask price level 2
+bid_sz_02,float64,opt_mbp,true,Bid size level 2
+ask_sz_02,float64,opt_mbp,true,Ask size level 2
+bid_ct_02,int64,opt_mbp,true,Bid order count level 2
+ask_ct_02,int64,opt_mbp,true,Ask order count level 2
+bid_px_03,float64,opt_mbp,true,Bid price level 3
+ask_px_03,float64,opt_mbp,true,Ask price level 3
+bid_sz_03,float64,opt_mbp,true,Bid size level 3
+ask_sz_03,float64,opt_mbp,true,Ask size level 3
+bid_ct_03,int64,opt_mbp,true,Bid order count level 3
+ask_ct_03,int64,opt_mbp,true,Ask order count level 3
+bid_px_04,float64,opt_mbp,true,Bid price level 4
+ask_px_04,float64,opt_mbp,true,Ask price level 4
+bid_sz_04,float64,opt_mbp,true,Bid size level 4
+ask_sz_04,float64,opt_mbp,true,Ask size level 4
+bid_ct_04,int64,opt_mbp,true,Bid order count level 4
+ask_ct_04,int64,opt_mbp,true,Ask order count level 4
+bid_px_05,float64,opt_mbp,true,Bid price level 5
+ask_px_05,float64,opt_mbp,true,Ask price level 5
+bid_sz_05,float64,opt_mbp,true,Bid size level 5
+ask_sz_05,float64,opt_mbp,true,Ask size level 5
+bid_ct_05,int64,opt_mbp,true,Bid order count level 5
+ask_ct_05,int64,opt_mbp,true,Ask order count level 5
+bid_px_06,float64,opt_mbp,true,Bid price level 6
+ask_px_06,float64,opt_mbp,true,Ask price level 6
+bid_sz_06,float64,opt_mbp,true,Bid size level 6
+ask_sz_06,float64,opt_mbp,true,Ask size level 6
+bid_ct_06,int64,opt_mbp,true,Bid order count level 6
+ask_ct_06,int64,opt_mbp,true,Ask order count level 6
+bid_px_07,float64,opt_mbp,true,Bid price level 7
+ask_px_07,float64,opt_mbp,true,Ask price level 7
+bid_sz_07,float64,opt_mbp,true,Bid size level 7
+ask_sz_07,float64,opt_mbp,true,Ask size level 7
+bid_ct_07,int64,opt_mbp,true,Bid order count level 7
+ask_ct_07,int64,opt_mbp,true,Ask order count level 7
+bid_px_08,float64,opt_mbp,true,Bid price level 8
+ask_px_08,float64,opt_mbp,true,Ask price level 8
+bid_sz_08,float64,opt_mbp,true,Bid size level 8
+ask_sz_08,float64,opt_mbp,true,Ask size level 8
+bid_ct_08,int64,opt_mbp,true,Bid order count level 8
+ask_ct_08,int64,opt_mbp,true,Ask order count level 8
+bid_px_09,float64,opt_mbp,true,Bid price level 9
+ask_px_09,float64,opt_mbp,true,Ask price level 9
+bid_sz_09,float64,opt_mbp,true,Bid size level 9
+ask_sz_09,float64,opt_mbp,true,Ask size level 9
+bid_ct_09,int64,opt_mbp,true,Bid order count level 9
+ask_ct_09,int64,opt_mbp,true,Ask order count level 9
+best_bid_px,float64,opt_mbp,true,Best bid price
+best_ask_px,float64,opt_mbp,true,Best ask price
+best_bid_sz,float64,opt_mbp,true,Best bid size
+best_ask_sz,float64,opt_mbp,true,Best ask size
+spread,float64,opt_mbp,true,Top-of-book spread
+mid_px,float64,opt_mbp,true,Top-of-book midpoint
+book_quality_bucket,utf8,opt_mbp,true,Book quality label
+rtype,int64,opt_mbp,false,Raw message type
+publisher_id,int64,opt_mbp,false,Publisher id
+instrument_id,int64,opt_mbp,false,Instrument id
+action,utf8,opt_mbp,false,Raw action
+side,utf8,opt_mbp,false,Raw side
+depth,int64,opt_mbp,false,Raw depth
+flags,int64,opt_mbp,false,Raw flags
+ts_in_delta,int64,opt_mbp,false,Feed delta timestamp
+source_file,utf8,opt_mbp,false,Origin DBN file
+stage_version,utf8,opt_mbp,false,Upstream stage version
+underlying_symbol,utf8,opt_mbp,false,Underlying symbol
+product_root,utf8,opt_mbp,false,Product root
+is_rth,bool,opt_mbp,false,Regular trading hours flag
+session_name,utf8,opt_mbp,false,Session name
+calendar_trade_date,date,opt_mbp,false,Calendar trade date
+session_open_utc,datetime_ms,opt_mbp,false,Session open time
+session_close_utc,datetime_ms,opt_mbp,false,Session close time
+calendar_name,utf8,opt_mbp,false,Trading calendar name
+recv_event_latency_ns,int64,opt_mbp,false,Receive-event latency
+is_crossed_book,bool,opt_mbp,false,Crossed book flag
+is_empty_book,bool,opt_mbp,false,Empty book flag
+is_non_monotonic,bool,opt_mbp,false,Monotonicity flag
+is_sparse_book,bool,opt_mbp,false,Sparse book flag
+is_wide_book,bool,opt_mbp,false,Wide book flag
+is_snapshot,bool,opt_mbp,false,Snapshot flag
+ts_recv_ns,datetime_ns,fut_trade,true,Receive timestamp
+ts_event_ns,datetime_ns,fut_trade,true,Event timestamp
+sequence,int64,fut_trade,true,Sequence for deterministic ordering
+record_id,utf8,fut_trade,true,Stable row identifier
+symbol,utf8,fut_trade,true,Futures symbol
+contract_key,utf8,fut_trade,true,Futures contract key
+price,float64,fut_trade,true,Trade price
+size,float64,fut_trade,true,Trade size
+trade_side,utf8,fut_trade,true,Normalized trade side
+notional,float64,fut_trade,true,Trade notional
+quality_bucket,utf8,fut_trade,true,Trade quality label
+rtype,int64,fut_trade,false,Raw message type
+publisher_id,int64,fut_trade,false,Publisher id
+instrument_id,int64,fut_trade,false,Instrument id
+action,utf8,fut_trade,false,Raw action
+side,utf8,fut_trade,false,Raw side
+depth,int64,fut_trade,false,Raw depth
+flags,int64,fut_trade,false,Raw flags
+ts_in_delta,int64,fut_trade,false,Feed delta timestamp
+source_file,utf8,fut_trade,false,Origin DBN file
+stage_version,utf8,fut_trade,false,Upstream stage version
+underlying_symbol,utf8,fut_trade,false,Underlying symbol
+product_root,utf8,fut_trade,false,Product root
+is_rth,bool,fut_trade,false,Regular trading hours flag
+session_name,utf8,fut_trade,false,Session name
+calendar_trade_date,date,fut_trade,false,Calendar trade date
+session_open_utc,datetime_ms,fut_trade,false,Session open time
+session_close_utc,datetime_ms,fut_trade,false,Session close time
+calendar_name,utf8,fut_trade,false,Trading calendar name
+recv_event_latency_ns,int64,fut_trade,false,Receive-event latency
+is_non_trade,bool,fut_trade,false,Non-trade flag
+has_invalid_price,bool,fut_trade,false,Invalid price flag
+has_invalid_size,bool,fut_trade,false,Invalid size flag
+has_unknown_side,bool,fut_trade,false,Unknown side flag
+has_negative_latency,bool,fut_trade,false,Negative latency flag
+has_bad_ts_recv,bool,fut_trade,false,Bad receive timestamp flag
+is_valid_trade,bool,fut_trade,false,Valid trade flag
+drop_reason,utf8,fut_trade,false,Trade drop reason
+has_flag_warning,bool,fut_trade,false,Trade warning flag
+ts_recv_ns,datetime_ns,opt_trade,true,Receive timestamp
+ts_event_ns,datetime_ns,opt_trade,true,Event timestamp
+sequence,int64,opt_trade,true,Sequence for deterministic ordering
+record_id,utf8,opt_trade,true,Stable row identifier
+symbol,utf8,opt_trade,true,Option symbol
+contract_key,utf8,opt_trade,true,Option contract key
+price,float64,opt_trade,true,Trade price
+size,float64,opt_trade,true,Trade size
+trade_side,utf8,opt_trade,true,Normalized trade side
+notional,float64,opt_trade,true,Trade notional
+quality_bucket,utf8,opt_trade,true,Trade quality label
+rtype,int64,opt_trade,false,Raw message type
+publisher_id,int64,opt_trade,false,Publisher id
+instrument_id,int64,opt_trade,false,Instrument id
+action,utf8,opt_trade,false,Raw action
+side,utf8,opt_trade,false,Raw side
+depth,int64,opt_trade,false,Raw depth
+flags,int64,opt_trade,false,Raw flags
+ts_in_delta,int64,opt_trade,false,Feed delta timestamp
+source_file,utf8,opt_trade,false,Origin DBN file
+stage_version,utf8,opt_trade,false,Upstream stage version
+underlying_symbol,utf8,opt_trade,false,Underlying symbol
+product_root,utf8,opt_trade,false,Product root
+is_rth,bool,opt_trade,false,Regular trading hours flag
+session_name,utf8,opt_trade,false,Session name
+calendar_trade_date,date,opt_trade,false,Calendar trade date
+session_open_utc,datetime_ms,opt_trade,false,Session open time
+session_close_utc,datetime_ms,opt_trade,false,Session close time
+calendar_name,utf8,opt_trade,false,Trading calendar name
+recv_event_latency_ns,int64,opt_trade,false,Receive-event latency
+is_non_trade,bool,opt_trade,false,Non-trade flag
+has_invalid_price,bool,opt_trade,false,Invalid price flag
+has_invalid_size,bool,opt_trade,false,Invalid size flag
+has_unknown_side,bool,opt_trade,false,Unknown side flag
+has_negative_latency,bool,opt_trade,false,Negative latency flag
+has_bad_ts_recv,bool,opt_trade,false,Bad receive timestamp flag
+is_valid_trade,bool,opt_trade,false,Valid trade flag
+drop_reason,utf8,opt_trade,false,Trade drop reason
+has_flag_warning,bool,opt_trade,false,Trade warning flag
