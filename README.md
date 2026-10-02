@@ -4,6 +4,14 @@
 
 仓库只包含代码、schema 和少量参考配置，不包含原始行情、处理结果、日志或访问凭据。
 
+## English Overview
+
+This repository presents a research-oriented pipeline for high-frequency futures, options, and equity market data. It contains two resumable data-acquisition workflows—Databento futures/options and Massive equity/OPRA flat files—and a seven-stage processing pipeline covering normalization, contract symbology, session construction, trade and MBP-10 cleaning, futures-option alignment, and quality-control reporting.
+
+The public repository is intended to demonstrate the data engineering, temporal alignment, and validation infrastructure used to prepare market-microstructure research datasets. It includes source code, schemas, and limited reference configuration only. Licensed raw data, processed research outputs, execution logs, internal notes, and credentials are not distributed. Access credentials are read from environment variables and should never be committed to Git.
+
+The published acquisition paths and Stage 1-7 pipeline are the maintained public workflow. Running the complete pipeline requires the relevant data subscriptions and local data files; the repository does not claim that licensed datasets can be reproduced without those services.
+
 ## 项目结构
 
 ```text
@@ -167,4 +175,6 @@ data/processed/
 
 ## 公开版本说明
 
-原工程中的 `src/data_fetch/fut/batch_downloader.py` 依赖缺失的 `FetchConfig` 实现，因此未纳入本仓库。带执行输出的 notebook、运行日志、缓存文件和内部会议记录也未纳入公开版本。
+公开版本仅保留当前维护的数据抓取入口和 Stage 1-7 处理链路。旧工程中未被公开流程使用的 legacy downloader 未纳入仓库，以避免发布不完整的内部依赖。带执行输出的 notebook、授权行情数据、运行日志、缓存文件和内部会议记录同样未纳入公开版本。
+
+本仓库用于展示研究数据基础设施和质量控制方法。完整运行需要相应的数据服务权限；公开仓库本身不分发或替代授权数据源。
